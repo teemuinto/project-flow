@@ -19,7 +19,7 @@
     SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-      json: "/practices/search.json",
+      json: "/project-flow/search.json",
       fuzzy: false,
       searchResultTemplate: '<li><a href="{url}">{title}</a><small> osiossa <strong>{category}</strong></small<div class="search-content" data-content={content}></div></li>',
       noResultsText: 'Ei hakutuloksia! Yritä etsiä uudelleen tai tee issue<a href="/issues/"> Githubissa</a>.'
