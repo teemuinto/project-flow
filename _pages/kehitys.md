@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "Sprintit"
-category: Kehitys
+category: kehitys
 date: 2017-02-24 15:00:00
-order: 4
+order: 1
 ---
 
 ### WordPress-projektien dokumentointi
