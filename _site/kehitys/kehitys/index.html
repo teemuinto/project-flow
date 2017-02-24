@@ -7,23 +7,27 @@
     <link rel="icon" href="/project-flow/favicon.ico">
 
     <meta property='og:image' content="https://devgeniem.github.io/project-flow/images/geniem-logo-full.png"/>
-    <meta property='og:url' content="https://devgeniem.github.io/">
+    <meta property='og:url' content="https://devgeniem.github.io/kehitys/kehitys/">
     <link rel="image_src" href="https://devgeniem.github.io/project-flow/images/geniem-logo-full.png" / >
     <link rel="shortcut icon" href="https://devgeniem.github.io/project-flow/favicon.ico">
 
-    <title>Geniem Project Flow : Johdanto</title>
-    <meta property='og:title' content="Geniem Project Flow : Johdanto"/>
+    <title>Geniem Project Flow : Sprintit</title>
+    <meta property='og:title' content="Geniem Project Flow : Sprintit"/>
     <meta property='og:site_name' content="Project flow">
     <meta property="og:type" content="website" />
 
     
-        <meta property='og:description' content=""/>
-        <meta name='twitter:description' content=""/>
+        <meta property='og:description' content="WordPress-projektien dokumentointi
+
+"/>
+        <meta name='twitter:description' content="WordPress-projektien dokumentointi
+
+"/>
     
 
     <meta name="twitter:site" content="@Geniemfi">
     <meta name="summary" content="twitter:card">
-    <meta name='twitter:title' content="Geniem Project Flow : Johdanto"/>
+    <meta name='twitter:title' content="Geniem Project Flow : Sprintit"/>
     <meta name="twitter:image:src" content="https://devgeniem.github.io/project-flow/images/geniem-logo-full.png">
 
 
@@ -115,12 +119,12 @@
                         <div class="page-header">
       <div class="row">
         <div class="col-md-7">
-          <h1>Johdanto
+          <h1>Sprintit
               
           </h1>
         </div>
         <div class="col-md-5 edit-buttons">
-          <a href="https://github.com/devgeniem/project-flow/edit/gh-pages/index.md" class="btn btn-default pull-right-md pull-left-sm">
+          <a href="https://github.com/devgeniem/project-flow/edit/gh-pages/_posts/2017-02-24-kehitys.md" class="btn btn-default pull-right-md pull-left-sm">
     <i class="glyphicon glyphicon-file"></i> Muokkaa
 </a>
 
@@ -130,7 +134,30 @@
 
 
 
-<p>Tämä ohjesivusto on tarkoitettu sekä uusille ohjelmistokehittäjille ohjenuoraksi että asiakkaille dokumentaatioksi Geniem Oy:n sisäisesti kehitetyistä hyvistä toimintatavoista. Sivustolta löytyy web-ohjelmistokehityksen tärkeimpien osa-alueiden ohjeet.</p>
+<h3 id="wordpress-projektien-dokumentointi">WordPress-projektien dokumentointi</h3>
+
+<p>WordPress-projekteissa projektin juureen luodaan <code class="highlighter-rouge">README.md</code> tiedosto, jossa kerrotaan projektin oleellisimmat asiat kehittäjälle paikallisen kehitysympäristön pystytykseen ja projektin stagelle ja tuotantoon viemiseen.</p>
+
+<h3 id="asiakokonaisuuksien-dokumentointi">Asiakokonaisuuksien dokumentointi</h3>
+
+<p>Projektin juureen luodaan <code class="highlighter-rouge">docs</code> hakemisto, jonka alle dokumentoidaan omiin .md tiedostoihinsa projektin oleellisimmat tekniset kokonaisuudet ja asiat.</p>
+
+<p>Esim. tehty henkilöitä varten uusi <code class="highlighter-rouge">Custom Post Type</code> “henkilot” johon liittyy filtteröitävä listausnäkymä (<code class="highlighter-rouge">sivupohja</code>) sekä yksittäisen henkilön <code class="highlighter-rouge">single</code> näkymä. Tätä kokonaisuutta varten luodaan <code class="highlighter-rouge">docs/henkilot.md</code> johon kirjataan:</p>
+
+<ul>
+  <li>Henkilöt kokonaisuuden toiminnallisuus (esim. vaatimusmäärittelystä)</li>
+  <li>Sisältötyypissä käytetyt <code class="highlighter-rouge">custom fieldit</code> ja niihin liittyvät mahdolliset erityishuomiot</li>
+  <li>Filtteröinnin toteutustapa, esim. javascript-kirjasto</li>
+  <li>Tärkeimpien tiedostojen sijainnit</li>
+  <li>Erityiset muut lisähuomiot, esim. custom rewritet</li>
+</ul>
+
+<p>Minimissään jokaisesta asiakokonaisuudesta olisi dokumentoituna vähintään vaatimusmäärittelyn mukainen lopputulos ja poikkeukset tai jos vaatimusmäärittelyä ei ole niin lyhyt kuvaus toiminnallisuudesta.</p>
+
+<h3 id="koodin-dokumentointi">Koodin dokumentointi</h3>
+
+<p>Dokumentoidaan omat metodit <a href="https://en.wikipedia.org/wiki/PHPDoc">PHPDoc</a> standardin mukaan.</p>
+
 
 
                     </div>
